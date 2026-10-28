@@ -5,13 +5,12 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    // This repository is published at https://hoclk6-collab.github.io/danken/
-    // Use a project-site base path so built JS/CSS assets load correctly.
-    base: '/danken/',
+    // Relative base path ensures assets load properly on GitHub Pages (e.g. https://<user>.github.io/<repo>/)
+    base: './',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(import.meta.dirname || process.cwd(), '.'),
       },
     },
     server: {
