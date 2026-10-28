@@ -1,0 +1,6 @@
+{
+  "name": "ITSM 資訊設備報修與維修管理系統",
+  "description": "企業級資訊設備故障通報、工程師派工檢測、外部廠商 SLA 追蹤、備用機領用與滿意度結案系統（完整對應 FSD 規格）。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
