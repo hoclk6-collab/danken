@@ -5,6 +5,9 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // This repository is published at https://hoclk6-collab.github.io/danken/
+    // Use a project-site base path so built JS/CSS assets load correctly.
+    base: '/danken/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
